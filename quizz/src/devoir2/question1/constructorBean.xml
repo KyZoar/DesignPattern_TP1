@@ -7,14 +7,14 @@
 	                    http:www.springframework.org/schema/context
 	                    http:www.springframework.org/schema/context/spring-beans.xsd">
 
-</beans>
+	<bean id="UML" class="devoir2.question1.UMLQuizz">
+		<constructor-arg index="1"  value="Question sur UML"/>
+		<constructor-arg index="2" value="Parmi les diagrammes suivants, lequel a été introduit dans UML2 ?"/>
+		<constructor-arg index="3" value="Diagramme d’activité"/>
+		<constructor-arg index="4" value="Diagramme de Classes"/>
+		<constructor-arg index="5" value="Diagramme de Temps"/>
+		<constructor-arg index="6" value="Diagramme des cas d’utilisation"/>
+		<constructor-arg index="7" value="2"/>
+	</bean>
 
-<bean id="UML" class="UMLQuizz">
-	<constructor-arg ref="type"     value="Question sur UML"/>
-	<constructor-arg ref="question" value="Parmi les diagrammes suivants, lequel a été introduit dans UML2 ?"/>
-	<constructor-arg ref="choix0"   value="Diagramme d’activité"/>
-	<constructor-arg ref="choix1"   value="Diagramme de Classes"/>
-	<constructor-arg ref="choix2"   value="Diagramme de Temps"/>
-	<constructor-arg ref="choix3"   value="Diagramme des cas d’utilisation"/>
-	<constructor-arg ref="reponse"  value="2"/>
-</bean>
+</beans>

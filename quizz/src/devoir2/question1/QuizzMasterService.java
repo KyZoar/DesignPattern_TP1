@@ -3,12 +3,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+import org.springframework.context.ApplicationContext;
+
 public class QuizzMasterService {
 	private JFrame ecran;
 	private JRadioButton [] lesBoutons;
-	private QuizzMaster quizMaster = new UMLQuizz();
+	//private QuizzMaster quizMaster = new UMLQuizz();
 	public QuizzMasterService()
 	{
+		ApplicationContext context = new ClassPathXmlApplicationContext("constructorBean.xml");
 		this.ecran = new JFrame();
 		lesBoutons = new JRadioButton [4];
 		ecran.setSize( 450, 200 );
