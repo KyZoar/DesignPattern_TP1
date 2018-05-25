@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http:www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http:www.springframework.org/schema/context
+	                    http:www.springframework.org/schema/context/spring-beans.xsd">
+
+	<bean id="UML" class="devoir2.question1.a.UMLQuizz">
+		<constructor-arg index="1" value="Question sur UML"/>
+		<constructor-arg index="2" value="Parmi les diagrammes suivants, lequel a été introduit dans UML2 ?"/>
+		<constructor-arg index="3" value="Diagramme d’activité"/>
+		<constructor-arg index="4" value="Diagramme de Classes"/>
+		<constructor-arg index="5" value="Diagramme de Temps"/>
+		<constructor-arg index="6" value="Diagramme des cas d’utilisation"/>
+		<constructor-arg index="7" value="2"/>
+	</bean>
+
+	<bean id="CMM" class="devoir2.question1.a.CMMQuizz">
+		<constructor-arg index="1" value="Question sur CMM"/>
+		<constructor-arg index="2" value="3.	La méthode  CMM (Capability Maturity Model) se divise en :"/>
+		<constructor-arg index="3" value="a)	3 niveaux"/>
+		<constructor-arg index="4" value="b)	4 niveaux"/>
+		<constructor-arg index="5" value="c)	5 niveaux"/>
+		<constructor-arg index="6" value="d)	6 niveaux"/>
+		<constructor-arg index="7" value="2"/>
+	</bean>
+
+</beans>

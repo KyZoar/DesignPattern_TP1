@@ -1,17 +1,20 @@
-package devoir2.question1;
+package devoir2.question1.a;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class QuizzMasterService {
 	private JFrame ecran;
 	private JRadioButton [] lesBoutons;
-	//private QuizzMaster quizMaster = new UMLQuizz();
+	private QuizzMaster quizMaster; // = new UMLQuizz();
 	public QuizzMasterService()
 	{
 		ApplicationContext context = new ClassPathXmlApplicationContext("constructorBean.xml");
+		//change it for <context.getBean("CMM", CMMQuizz.class);> for CMM quizz
+		quizMaster = context.getBean("UML", UMLQuizz.class);
 		this.ecran = new JFrame();
 		lesBoutons = new JRadioButton [4];
 		ecran.setSize( 450, 200 );

@@ -7,7 +7,11 @@
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
+<<<<<<< HEAD
 		<config>src/devoir2/question1/constructorBean.xml</config>
+=======
+		<config>src/devoir2/question1/b/setterBean.xml</config>
+>>>>>>> master
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
